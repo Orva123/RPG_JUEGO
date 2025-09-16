@@ -4,8 +4,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'MedievalSharp', serif;
-  background: url('img/pergamino.jpg') center/cover no-repeat fixed;
-  color: #f5f3e7;
+  background: url('img/32lONfLyE48wAyyovWUL23bRMgH.mp4') center/cover no-repeat fixed;
+  color: #c0c0c0;
   min-height: 100vh;
   cursor: url('cursors/sword.cur'), auto;
   transition: background 1s;
@@ -25,8 +25,8 @@ header {
 
 .titulo-fantasia {
   font-size: 3.5rem;
-  color: #ffd700;
-  text-shadow: 0 0 20px #b4a76c, 0 0 40px #fff;
+  color: #ac3e3e;
+  text-shadow: 0 0 10px #3e3e3e, 0 0 30px #000;
   margin: 0;
   letter-spacing: 2px;
   animation: fadeInDown 1.2s;
@@ -36,11 +36,11 @@ header {
   font-size: 1.3rem;
   margin: 20px auto 30px auto;
   max-width: 600px;
-  color: #2e5d7c;
-  background: rgba(255,255,255,0.7);
+  color: #d1d1d1;
+  background: rgba(30,30,30,0.95);
   border-radius: 12px;
   padding: 15px 25px;
-  box-shadow: 0 0 12px #ffd700;
+  box-shadow: 0 0 12px #2c2c2c;
   animation: fadeIn 2s;
 }
 
@@ -58,19 +58,19 @@ header {
   border-radius: 12px;
   text-decoration: none;
   transition: background 0.4s, box-shadow 0.4s, color 0.4s;
-  box-shadow: 0 0 10px #ffd700;
-  border: 2px solid #ffd700;
-  background: linear-gradient(90deg, #2e5d7c, #ffd700);
-  color: #fff;
+  box-shadow: 0 0 10px #3e3e3e;
+  border: 2px solid #7e3b3b;
+  background: linear-gradient(90deg, #1b1b1b, #2c2c2c);
+  color: #d1d1d1;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
 .menu a:hover {
-  background: linear-gradient(90deg, #ffd700, #2e5d7c);
-  color: #2e5d7c;
-  box-shadow: 0 0 30px #ffd700, 0 0 60px #2e5d7c;
+  background: linear-gradient(90deg, #2c2c2c, #1b1b1b);
+  color: #aa1919;
+  box-shadow: 0 0 20px #803030, 0 0 40px #000;
   cursor: url('cursors/sword.cur'), pointer;
 }
 
@@ -78,6 +78,7 @@ header {
   from { opacity: 0; transform: translateY(-40px);}
   to { opacity: 1; transform: translateY(0);}
 }
+
 @keyframes fadeIn {
   from { opacity: 0;}
   to { opacity: 1;}
@@ -85,8 +86,8 @@ header {
 
 /* HEROES PAGE */
 .heroes-bg {
-  background: linear-gradient(120deg, #f5f3e7 80%, #aee9d1 100%);
-  color: #2e5d7c;
+  background: linear-gradient(120deg, #0f0f0f 80%, #1b1b1b 100%);
+  color: #c0c0c0;
   transition: background 1s;
 }
 
@@ -99,11 +100,11 @@ header {
 }
 
 .ficha-heroe {
-  background: linear-gradient(135deg, #fffbe7 80%, #ffd700 100%);
-  border: 3px solid #2e5d7c;
+  background: linear-gradient(135deg, #1b1b1b 80%, #2c2c2c 100%);
+  border: 3px solid #3e3e3e;
   border-radius: 18px;
-  box-shadow: 0 0 24px #ffd700;
-  color: #2e5d7c;
+  box-shadow: 0 0 24px #000;
+  color: #d1d1d1;
   width: 260px;
   position: relative;
   overflow: hidden;
@@ -115,7 +116,7 @@ header {
 
 .ficha-heroe img {
   width: 100%;
-  border-bottom: 2px solid #ffd700;
+  border-bottom: 2px solid #3e3e3e;
 }
 
 .ficha-heroe .nombre {
@@ -141,19 +142,19 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(255, 255, 224, 0.97);
-  color: #2e5d7c;
+  background: rgba(20, 20, 20, 0.95);
+  color: #c0c0c0;
   width: 100%;
   padding: 1rem;
   transition: opacity 0.4s;
   pointer-events: none;
   font-size: 1rem;
-  border-top: 2px solid #ffd700;
+  border-top: 2px solid #3e3e3e;
 }
 
 .ficha-heroe:hover {
   transform: scale(1.05) rotate(2deg);
-  box-shadow: 0 0 40px #ffd700, 0 0 80px #2e5d7c;
+  box-shadow: 0 0 40px #973030, 0 0 80px #000;
 }
 
 .ficha-heroe:hover .descripcion {
@@ -162,8 +163,8 @@ header {
 
 /* ANTAGONISTAS PAGE */
 .antagonistas-bg {
-  background: linear-gradient(120deg, #18141a 80%, #2d0a2d 100%);
-  color: #fff;
+  background: linear-gradient(120deg, #0e0e0e 80%, #1a0e1a 100%);
+  color: #c0c0c0;
   transition: background 1s;
 }
 
@@ -176,11 +177,11 @@ header {
 }
 
 .ficha-antagonista {
-  background: linear-gradient(135deg, #2d0a2d 80%, #7c0a02 100%);
-  border: 3px solid #b3001b;
+  background: linear-gradient(135deg, #1a0e1a 80%, #2a0d1f 100%);
+  border: 3px solid #3e3e3e;
   border-radius: 18px;
-  box-shadow: 0 0 24px #6e44ff;
-  color: #fff;
+  box-shadow: 0 0 24px #000;
+  color: #c0c0c0;
   width: 260px;
   position: relative;
   overflow: hidden;
@@ -192,7 +193,7 @@ header {
 
 .ficha-antagonista img {
   width: 100%;
-  border-bottom: 2px solid #b3001b;
+  border-bottom: 2px solid #3e3e3e;
 }
 
 .ficha-antagonista .nombre {
@@ -218,24 +219,36 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: rgba(44, 0, 44, 0.97);
-  color: #fff;
+  background: rgba(10, 10, 10, 0.95);
+  color: #d1d1d1;
   width: 100%;
   padding: 1rem;
   transition: opacity 0.4s;
   pointer-events: none;
   font-size: 1rem;
-  border-top: 2px solid #b3001b;
+  border-top: 2px solid #3e3e3e;
 }
 
 .ficha-antagonista:hover {
   transform: scale(1.05) rotate(-2deg);
-  box-shadow: 0 0 40px #b3001b, 0 0 80px #6e44ff;
+  box-shadow: 0 0 40px #aa1e1e, 0 0 80px #000;
 }
 
 .ficha-antagonista:hover .descripcion {
   opacity: 1;
 }
+#video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  
+  pointer-events: none;
+}
+
 
 /* Responsive */
 @media (max-width: 800px) {
@@ -245,6 +258,7 @@ header {
     gap: 1rem;
     padding: 1rem;
   }
+
   .logo {
     width: 90vw;
   }
