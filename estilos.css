@@ -92,11 +92,11 @@ header {
 }
 
 .fichas-heroes {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  justify-content: center;
   padding: 2rem;
+  justify-items: center;
 }
 
 .ficha-heroe {
@@ -105,7 +105,8 @@ header {
   border-radius: 18px;
   box-shadow: 0 0 24px #000;
   color: #d1d1d1;
-  width: 260px;
+  width: 100%;
+  max-width: 300px;
   position: relative;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -182,7 +183,8 @@ header {
   border-radius: 18px;
   box-shadow: 0 0 24px #000;
   color: #c0c0c0;
-  width: 260px;
+  width: 100%;
+  max-width: 300px;
   position: relative;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -237,6 +239,7 @@ header {
 .ficha-antagonista:hover .descripcion {
   opacity: 1;
 }
+
 #video-fondo {
   position: fixed;
   top: 0;
@@ -245,21 +248,39 @@ header {
   min-height: 100vh;
   object-fit: cover;
   z-index: -1;
-  
   pointer-events: none;
 }
-
 
 /* Responsive */
 @media (max-width: 800px) {
   .fichas-heroes, .fichas-antagonistas {
+    display: flex;
     flex-direction: column;
-    grid-template-columns: 1fr;
+    align-items: center;
     gap: 1rem;
     padding: 1rem;
   }
 
-  .logo {
-    width: 90vw;
+  .ficha-antagonista,
+  .ficha-heroe {
+    max-width: 90vw;
   }
+
+  .logo {
+    width: 80vw;
+  }
+
+  .titulo-fantasia {
+    font-size: 2.2rem;
+  }
+}
+
+video.fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
